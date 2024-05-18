@@ -29,8 +29,7 @@ const SignUp = () => {
         },
         body: JSON.stringify(formData),
       });
-  
-      // Check if response is okay
+      
       if (!res.ok) {
         const errorData = await res.json();
         setLoading(false);
